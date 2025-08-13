@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Vilvah Herbals</title>
+</head>
+<body bgcolor="#FFFACD" text="black">
+ <center>
+ <img src="vilvah.jpg" alt="Vilvah Logo">
+ <h1> Welcome to Vilvah – Your One-Stop Beauty Destination!</h1>
+ <hr>
+ </center>
+ <!-- Category Selection -->
+ <center>
+ <h2> Explore Beauty Categories</h2>
+ <table border="0" cellpadding="10" width="70%">
+ <tr align="center">
+ <td>
+ <img src="hair.png" alt="Hair Care" onclick="showCategory('hair', 'haircare-video.mp4')" width="150"
+height="150"><br>
+ <b>Hair Care</b>
+ </td>
+ <td>
+ <img src="skin.png" alt="Skin Care" onclick="showCategory('skin', 'skincare-video.mp4')" width="150"
+height="150"><br>
+ <b>Skin Care</b>
+ </td>
+ <td>
+ <img src="lip.png" alt="Lip Care" onclick="showCategory('lip', 'lipcare-video.mp4')" width="150"
+height="150"><br>
+ <b>Lip Care</b>
+ </td>
+ </tr>
+ </table>
+ <hr>
+ </center>
+ <!-- Hair Care Section -->
+ <div id="hair" align="center" hidden>
+ <h2>Hair Care</h2>
+ <table cellpadding="10">
+ <tr align="center">
+ <td><div id="p1" class="product-box" draggable="true" ondragstart="drag(event)"><img src="shampoo.jpg"
+class="product-img"><br>Shampoo – ₹350</div></td>
+ <td><div id="p2" class="product-box" draggable="true" ondragstart="drag(event)"><img src="oil.jpg"
+class="product-img"><br>Hair Oil – ₹250</div></td>
+ <td><div id="p3" class="product-box" draggable="true" ondragstart="drag(event)"><img src="serum.jpg"
+class="product-img"><br>Hair Serum – ₹399</div></td>
+ <td><div id="p4" class="product-box" draggable="true" ondragstart="drag(event)"><img src="mask.jpg"
+class="product-img"><br>Hair Mask – ₹299</div></td>
+ </tr>
+ <tr align="center">
+ <td><div id="p5" class="product-box" draggable="true" ondragstart="drag(event)"><img src="comb.jpg"
+class="product-img"><br>Neem Comb – ₹199</div></td>
+ <td><div id="p6" class="product-box" draggable="true" ondragstart="drag(event)"><img src="conditioner.jpg"
+class="product-img"><br>Conditioner – ₹320</div></td>
+ <td><div id="p7" class="product-box" draggable="true" ondragstart="drag(event)"><img src="cream.jpg"
+class="product-img"><br>Hair Cream – ₹280</div></td>
+ <td><div id="p8" class="product-box" draggable="true" ondragstart="drag(event)"><img src="spray.png"
+class="product-img"><br>Hair Spray – ₹299</div></td>
+ </tr>
+ </table>
+ <hr>
+ </div>
+ <!-- Skin Care Section -->
+ <div id="skin" align="center" hidden>
+ <h2>Skin Care</h2>
+ <table cellpadding="10">
+ <tr align="center">
+ <td><div id="s1" class="product-box" draggable="true" ondragstart="drag(event)"><img src="foaming
+facewash.png" class="product-img"><br>Face Wash – ₹299</div></td>
+ <td><div id="s2" class="product-box" draggable="true" ondragstart="drag(event)"><img src="moisturizer.jpg"
+class="product-img"><br>Moisturizer – ₹399</div></td>
+ <td><div id="s3" class="product-box" draggable="true" ondragstart="drag(event)"><img src="scrub.jpg"
+class="product-img"><br>Face Scrub – ₹220</div></td>
+ <td><div id="s4" class="product-box" draggable="true" ondragstart="drag(event)"><img src="sunscreen.jpg"
+class="product-img"><br>Sunscreen – ₹350</div></td>
+ </tr>
+ <tr align="center">
+ <td><div id="s5" class="product-box" draggable="true" ondragstart="drag(event)"><img src="toner.jpg"
+class="product-img"><br>Face Toner – ₹280</div></td>
+ <td><div id="s6" class="product-box" draggable="true" ondragstart="drag(event)"><img src="cleanser.jpg"
+class="product-img"><br>Cleanser – ₹199</div></td>
+ <td><div id="s7" class="product-box" draggable="true" ondragstart="drag(event)"><img src="facemask.jpg"
+class="product-img"><br>Clay Mask – ₹325</div></td>
+ <td><div id="s8" class="product-box" draggable="true" ondragstart="drag(event)"><img src="faceserum1.jpg"
+class="product-img"><br>Vitamin C Serum – ₹420</div></td>
+ </tr>
+ </table>
+ <hr>
+ </div>
+ <!-- Lip Care Section -->
+ <div id="lip" align="center" hidden>
+ <h2>Lip Care</h2>
+ <table cellpadding="10">
+ <tr align="center">
+ <td><div id="l1" class="product-box" draggable="true" ondragstart="drag(event)"><img src="lipbalm.jpg"
+class="product-img"><br>Lip Balm – ₹199</div></td>
+ <td><div id="l2" class="product-box" draggable="true" ondragstart="drag(event)"><img src="lip scrub.jpg"
+class="product-img"><br>Lip Scrub – ₹299</div></td>
+ <td><div id="l3" class="product-box" draggable="true" ondragstart="drag(event)"><img src="lip_oil.jpg"
+class="product-img"><br>Lip Oil – ₹250</div></td>
+ <td><div id="l4" class="product-box" draggable="true" ondragstart="drag(event)"><img src="lip_mask.jpg"
+class="product-img"><br>Lip Mask – ₹275</div></td>
+ </tr>
+ <tr align="center">
+ <td><div id="l5" class="product-box" draggable="true" ondragstart="drag(event)"><img src="tinted_lipbalm.jpg"
+class="product-img"><br>Tinted Balm – ₹320</div></td>
+ <td><div id="l6" class="product-box" draggable="true" ondragstart="drag(event)"><img
+src="lip_conditioner.jpg" class="product-img"><br>Lip Conditioner – ₹299</div></td>
+ <td><div id="l7" class="product-box" draggable="true" ondragstart="drag(event)"><img src="lip_gloss.jpg"
+class="product-img"><br>Lip Gloss – ₹199</div></td>
+ <td><div id="l8" class="product-box" draggable="true" ondragstart="drag(event)"><img src="lip_tint.jpg"
+class="product-img"><br>Lip Tint – ₹220</div></td>
+ </tr>
+ </table>
+ <hr>
+ </div>
+ <center>
+ <h2> Your Cart </h2>
+ <div id="cart" ondrop="drop(event)" ondragover="allowDrop(event)"
+ style="display: flex; flex-wrap: wrap; width: 80%; margin: auto; border: 1px solid black; min-height: 200px; justifycontent: center; padding: 10px;">
+ <p id="placeholder">Drop Products Here</p>
+ </div>
+ <hr>
+</center>
+ <!-- Video Section -->
+ <center>
+ <h2> NEW LAUNCH! </h2>
+ <video id="categoryVideo" width="700" height="400" controls>
+ <source src="" type="video/mp4">
+ </video>
+ <hr>
+ </center>
+ <!-- Geolocation -->
+ <center>
+ <h2> Find Nearby Store</h2>
+ <p><a href="#" onclick="getLocation()">Click here to get your current location</a></p>
+ <p id="loc">Location: Not fetched yet</p>
+ <hr>
+ </center>
+ <!-- Purchase Form -->
+ <center>
+ <h2> Purchase Form</h2>
+ <form>
+ <table cellpadding="5">
+ <tr><td>Name:</td><td><input type="text" required></td></tr>
+ <tr><td>Email:</td><td><input type="email" required></td></tr>
+ <tr><td>Product:</td><td>
+ <select required>
+ <option value="">--Select--</option>
+ <option>Shampoo</option>
+ <option>Face Wash</option>
+ <option>Lip Balm</option>
+ </select>
+ </td></tr>
+ <tr><td>Quantity:</td><td><input type="number" min="1" max="5" required></td></tr>
+ <tr><td>Color Preference:</td><td><input type="color"></td></tr>
+ <tr><td>Delivery Date:</td><td><input type="date" required></td></tr>
+ <tr><td>Payment Mode:</td><td>
+ <select required>
+ <option>Credit Card</option>
+ <option>UPI</option>
+ <option>Cash on Delivery</option>
+ </select>
+ </td></tr>
+ <tr><td colspan="2" align="center"><input type="submit" value="Place Order"></td></tr>
+ </table>
+ </form>
+ <hr>
+ </center>
+ <center>
+ <p>&copy; 2025 Vilvah Herbals. All rights reserved.</p>
+ </center>
+ <!-- JavaScript -->
+ <script>
+ function allowDrop(ev) {
+ ev.preventDefault();
+ }
+ function drag(ev) {
+ ev.dataTransfer.setData("text", ev.target.id);
+ }
+ function drop(ev) {
+ ev.preventDefault();
+ var data = ev.dataTransfer.getData("text");
+ var original = document.getElementById(data);
+ var clone = original.cloneNode(true);
+ clone.removeAttribute("id");
+ clone.style.width = "23%"; // Approx 4 in a line with some gap
+ clone.style.margin = "10px";
+ document.getElementById("placeholder").style.display = "none";
+ ev.target.appendChild(clone);
+}
+ function getLocation() {
+ if (navigator.geolocation) {
+ navigator.geolocation.getCurrentPosition(function(position) {
+ document.getElementById("loc").innerHTML =
+ "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+ });
+ } else {
+ document.getElementById("loc").innerHTML = "Geolocation is not supported by this browser.";
+ }
+ }
+ function showCategory(id, videoSrc) {
+ document.getElementById('hair').hidden = true;
+ document.getElementById('skin').hidden = true;
+ document.getElementById('lip').hidden = true;
+ document.getElementById(id).hidden = false;
+ var video = document.getElementById("categoryVideo");
+ video.querySelector("source").src = videoSrc;
+ video.load();
+ }
+ </script>
+</body>
+</html>
+
